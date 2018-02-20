@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+<link rel="stylesheet" type="text/css" href= {{url_for('static', filename="style.css")}}>
+
+{% block content %}
+<h2 class="center thin white-text" style="font-family: Brownhill; font-size: 3cm;" >Music Videos</h2>
+<img  class="25-px" src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/30968168_001_s" style="width: auto; height: auto;max-width: 25px;max-height: 25px"/>
+
+<div class="row">
+      <div class="col s12 m12 l12">
+            <span>
+       <h3 class="center thin white-text" style="font-family: Moon; font-size: 0.7cm">Bruised</h3>
+<iframe class="center-align" width="1120" height="630" src="https://www.youtube.com/embed/Pb6jh8vimQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </span>
+        </div>
+</div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+            <span>
+       <h3 class="center thin white-text" style="font-family: Moon; font-size: 0.8cm" >xx</h3>
+<iframe class="center-align" width="1120" height="630" src="https://www.youtube.com/embed/i2naPvBtHHs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </span>
+        </div>
+</div>
+        <div class="row">
+      <div class="col s12 m12 l12">
+            <span>
+       <h3 class="center thin white-text" style="font-family: Moon; font-size: 0.7cm" >hard pill to swallow</h3>
+<iframe class="center-align" width="1120" height="630" src="https://www.youtube.com/embed/66l4wERPUS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </span>
+        </div>
+</div>
+       <div class="row">
+      <div class="col s12 m12 l12">
+            <span>
+       <h3 class="center thin white-text" style="font-family: Moon; font-size: 0.7cm" >home</h3>
+<iframe class="center-align" width="1120" height="630" src="https://www.youtube.com/embed/rpbbuI2jndE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </span>
+        </div>
+</div>
+    <img  class="25-px" src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/30968168_001_s" style="width: auto; height: auto;max-width: 50px;max-height: 50px"/>
+
+{% endblock %}
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Slider
+          $('.slider').slider();
+          $('.parallax').parallax();
+
+
+
+        });
+      </script>

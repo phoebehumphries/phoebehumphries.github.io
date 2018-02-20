@@ -1,0 +1,43 @@
+<!--# This page took the longest for me, as my knowledge of how the grid/row system was limited.
+# After this, I have successfully learned how it works and how to apply it.
+
+# This page is more of a portal to other web pages I have, exactly 24 pages.
+# The user clicks on card panel of the episode they want to see more about, and it takes them to that specific page.
+# Since there are 24 episodes in season 1, I had to figure out how I wanted to display these cards.
+
+# I went with 4 cards in a row, each having to take up 3 of the grid.
+# Overall I had 6 rows, 24 cards.
+# On mobile the cards will take up 12 on the grid.
+
+-->
+{% extends "base.html" %}
+{% block content %}
+
+ <div class="section black">
+    <div class="row container">
+      <h2 class="center white-text header" style="font-family: Moon;font-size: 2cm;">New Music Video</h2>
+        <div class="video-container">
+
+<iframe class="center-align" width="1120" height="630" src="https://www.youtube.com/embed/6WTldBrSRhs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Slider
+          $('.slider').slider();
+          $('.parallax').parallax();
+
+
+
+        });
+      </script>

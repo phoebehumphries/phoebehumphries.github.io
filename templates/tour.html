@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+<link rel="stylesheet" type="text/css" href= {{url_for('static', filename="style.css")}}>
+
+{% block content %}
+    <img  class="25-px" src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/30968168_001_s" style="width: auto; height: auto;max-width: 25px;max-height: 25px"/>
+
+  <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-auto-style="true" data-artist-name="morgxn" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#9955B8" data-popup-background-color="#000000" data-background-color="#000000" data-display-limit="11" data-link-text-color="#FFFFFF"></a>
+<img  class="25-px" src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/30968168_001_s" style="width: auto; height: auto;max-width: 25px;max-height: 25px"/>
+
+{% endblock %}
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Slider
+          $('.slider').slider();
+          $('.parallax').parallax();
+
+
+
+        });
+      </script>

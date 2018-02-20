@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Morgxn Official Website</title>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <link rel="stylesheet" type="text/css" href= {{url_for('static', filename="style.css")}}>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--
+ # Here I imported materialize using the CDN.
+ # I have created the nav bar for desktop and for mobile/small screens.
+ # I hreffed to each page in my website.
+
+
+ # Also have created a footer, so that the page has an end and overall thank you note.
+ # Used blocks so the base will be used for every page, almost like bread in a sandwich.
+
+ # Most useful feature in this code is the empty  block content end block tags. These are empty so that on
+ # every other page I can put things between the nav bar and footer, without having to repeat the code.
+ # Making this the 'template' html page for all other pages.
+
+-->
+{% block nav %}
+<nav class="navbar transparent">
+    <nav style="background:rgba(0,0,0,0.1) !important;">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo" class="center-block thin white-text" id="title_page" >Morgxn</a>
+        <a href="/" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile"  class=" right hide-on-med-and-down">
+        <li><a href="/" >Home</a></li>
+        <li><a href="music" >Music</a></li>
+        <li><a href="videos" >Videos</a></li>
+        <li><a href="tour" >Tour</a></li>
+        <li><a href="gallery" >Gallery</a></li>
+        <li><a href="biography">Bio</a> </li>
+        <li><a href="contact">Contact</a> </li>
+
+      </ul>
+  </div>
+
+    </nav>
+        <ul class="side-nav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="music">Music</a></li>
+        <li><a href="videos">Videos</a></li>
+        <li><a href="tour">Tour</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="biography">Bio</a> </li>
+        <li><a href="contact">Contact</a> </li>
+
+      </ul>
+</nav>
+  {% endblock %}
+
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text" style="font-family: Moon-Bold;">Follow & Subscribe</h5>
+<ul>
+<li><a href="https://en-gb.facebook.com/morgxnofficial/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.youtube.com/user/morgxnVEVO" target="_blank"><i class="fa fa-youtube"></i></a></li>
+<li><a href="https://twitter.com/morgxn?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.instagram.com/morgxnofficial/" target="_blank"><i class="fa Example of instagram fa-instagram"></i> </a></li>
+</ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"></h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" style="font-family: Moon;" href="http://www.wxnderlost.com/">Wxnderlost Website</a></li>
+                 <li><a class="grey-text text-lighten-3" style="font-family: Moon;" href="http://www.wxnderlost.com/">Terms and Conditions</a></li>
+                    <li><a class="grey-text text-lighten-3" style="font-family: Moon;" href="http://www.wxnderlost.com/">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+             © Copyright 2018 Wxnderlost Records
+
+                 <a class="grey-text text-lighten-3 right" href="https://twitter.com/wxnderlost___?lang=en">Wxnderlost Twitter</a>
+
+            </div>
+          </div>
+        </footer>
+
+
+
+
+
+{% endblock %}
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Slider
+          $('.slider').slider();
+          $(".dropdown-button").dropdown();
+          $(".button-collapse").sideNav();
+          $('.parallax').parallax();
+
+
+
+        });
+      </script>
+</body>
+</html>
